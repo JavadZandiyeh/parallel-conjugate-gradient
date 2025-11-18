@@ -1,0 +1,9 @@
+hpc_unitn:
+  scheduler: pbs
+  default_conf:
+    queue: "short_cpuQ"
+  configs:
+    - name: build
+      cpus: "1"
+      mem: "16G"
+      time: "00:30:00"

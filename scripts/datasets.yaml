@@ -1,0 +1,14 @@
+path: ./datasets
+
+matrices:
+  # List of matrices to be downloaded from SuiteSparse
+  # Format: "<group>/<matrix_name>"
+  suite_sparse_matrix_list:
+    - HB/bcsstk17         # Structural Problem
+    - HB/bcsstm25         # Structural Problem
+    - Boeing/bcsstk36     # Structural Problem
+    - Boeing/msc23052     # Structural Problem
+    - Mulvey/finan512     # Financial Problem
+    - Nasa/nasasrb        # Structural Problem
+    - Cunningham/qa8fm    # Acoustics Problem
+    - Rothberg/cfd1       # Computational Fluid Dynamics Problem

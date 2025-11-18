@@ -1,0 +1,12 @@
+variables:
+  PETSC_DIR: /path/to/petsc  # Update this path to your PETSc installation
+
+jobs:
+  - config: build
+    config_jobs:
+    # Build PETSc-based solver
+      - tag: build
+        command: mpicc -I{PETSC_DIR}/include -L{PETSC_DIR}/lib petsc.cpp -lpetsc -lm petsc.cpp -o petsc_solver
+    # Build Preconditioned Conjugate Gradient solver
+      - tag: build
+        command: mpicc preconditioned_cg.cpp -o preconditioned_cg
